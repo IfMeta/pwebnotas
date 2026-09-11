@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistema de Notas</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="login-container">
+
+        <section class="login-box">
+
+            <h1>Sistema de Notas</h1>
+            <p>Entre com sua conta</p>
+
+            <form id="loginForm">
+
+                <label for="email">E-mail</label>
+
+                <input type="email" id="email" placeholder="seu@email.com" required>
+
+                <label for="senha">Senha</label>
+
+                <input type="password" id="senha" placeholder="Sua senha" required>
+
+                <button type="submit">Entrar</button>
+
+                <p id="mensagem"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Biblioteca do Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- Configuração do Supabase -->
+    <script src="js/config.js"></script>
+
+    <!-- Código do login -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

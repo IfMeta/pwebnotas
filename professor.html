@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Professor - Sistema de Notas</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="painel">
+
+        <header class="cabecalho">
+
+            <div>
+                <h1>Painel do Professor</h1>
+                <p>Cadastro e gerenciamento de notas</p>
+            </div>
+
+            <button id="sair">Sair</button>
+
+        </header>
+
+
+        <section class="card">
+
+            <h2>Lançar nota</h2>
+
+            <form id="formNota">
+
+                <label for="aluno">Aluno</label>
+
+                <select id="aluno" required>
+                    <option value="">Selecione um aluno</option>
+                </select>
+
+
+                <label for="nota">Nota final</label>
+
+                <input
+                    type="number"
+                    id="nota"
+                    min="0"
+                    max="10"
+                    step="0.01"
+                    placeholder="0 a 10"
+                    required
+                >
+
+
+                <button type="submit">
+                    Salvar nota
+                </button>
+
+            </form>
+
+            <p id="mensagem"></p>
+
+        </section>
+
+
+        <section class="card">
+
+            <h2>Alunos cadastrados</h2>
+
+            <div id="listaAlunos">
+                Carregando...
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/config.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/professor.js"></script>
+
+</body>
+
+</html>

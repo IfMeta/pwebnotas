@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aluno - Sistema de Notas</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="painel">
+
+        <header class="cabecalho">
+            <div>
+                <h1>Área do Aluno</h1>
+                <p>Consulta da nota final</p>
+            </div>
+
+            <button id="sair">Sair</button>
+        </header>
+
+        <section class="card nota">
+
+            <h1>Minha nota</h1>
+            <p>Confira sua nota final</p>
+
+            <div id="resultado">
+                Carregando...
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/config.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/aluno.js"></script>
+
+
+</body>
+
+</html>
